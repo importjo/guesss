@@ -12,4 +12,6 @@ func TestGuesss(t *testing.T) {
 	assert.True(t, isAnswerCorrect(guess, answer))
 	guess = 4000
 	assert.False(t, isAnswerCorrect(guess, answer))
+	guess = 4700
+	assert.False(t, isAnswerCorrect(guess, answer))
 }
