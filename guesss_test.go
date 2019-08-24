@@ -11,7 +11,7 @@ func TestIsGuessCorrect(t *testing.T) {
 	answer = 4500
 	assert.Equal(t, "You found the answer.", isGuessCorrect(guess, answer))
 	guess = 4000
-	assert.Equal(t, "Wrong answer.", isGuessCorrect(guess, answer))
+	assert.Equal(t, "Wrong answer. Your guess is lower.", isGuessCorrect(guess, answer))
 	guess = 4700
-	assert.Equal(t, "Wrong answer.", isGuessCorrect(guess, answer))
+	assert.Equal(t, "Wrong answer. Your guess is higher.", isGuessCorrect(guess, answer))
 }
