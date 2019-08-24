@@ -7,5 +7,5 @@ func main() {
 }
 
 func isAnswerCorrect(guess, answer int) bool {
-	return true
+	return guess == answer
 }
