@@ -6,6 +6,10 @@ var answer int
 func main() {
 }
 
-func isAnswerCorrect(guess, answer int) bool {
-	return guess == answer
+func isGuessCorrect(guess, answer int) string {
+	if guess == answer {
+		return "You found the answer."
+	} else {
+		return "Wrong answer."
+	}
 }

@@ -6,12 +6,12 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-func TestGuesss(t *testing.T) {
+func TestIsGuessCorrect(t *testing.T) {
 	guess = 4500
 	answer = 4500
-	assert.True(t, isAnswerCorrect(guess, answer))
+	assert.Equal(t, "You found the answer.", isGuessCorrect(guess, answer))
 	guess = 4000
-	assert.False(t, isAnswerCorrect(guess, answer))
+	assert.Equal(t, "Wrong answer.", isGuessCorrect(guess, answer))
 	guess = 4700
-	assert.False(t, isAnswerCorrect(guess, answer))
+	assert.Equal(t, "Wrong answer.", isGuessCorrect(guess, answer))
 }
